@@ -6,7 +6,7 @@ connection();
 const userroute = require("./Routes/UtilisateurRoute");
 var cors = require("cors");
 
-app.use(cors({ origin: "" }));
+app.use(cors({ origin: "http://127.0.0.1:5173/" }));
 
 app.use(express.json());
 app.use( "/user", userroute );
